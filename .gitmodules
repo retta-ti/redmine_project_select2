@@ -1,0 +1,6 @@
+[submodule "assets/javascripts/select2"]
+	path = assets/javascripts/select2
+	url = https://github.com/select2/select2.git
+[submodule "assets/stylesheets/select2"]
+	path = assets/stylesheets/select2
+	url = https://github.com/select2/select2.git
