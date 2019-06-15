@@ -1,23 +1,20 @@
 function replaceProjectSelect() {
-    $("#project_quick_jump_box").select2({
-        width:"resolve",
+    $("#project_quick_jump_box, #issue_project_id").select2({
+        width: "340px",
         placeholder: "",
         allowClear: true
     });
 }
 
-(function($) {
+(function ($) {
     replaceProjectSelect();
 
-    $(document).ajaxComplete(function(event) {
+    $(document).ajaxComplete(function (event) {
         replaceProjectSelect();
     });
 
-    $(window).load(function() {
+    $(window).load(function () {
         replaceProjectSelect();
     });
 
-    $(document).change(function(event) {
-        replaceProjectSelect();
-    });
-} (jQuery));
+}(jQuery));
